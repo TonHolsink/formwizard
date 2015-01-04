@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://ajoke.cz/wizard/examples -->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Step Form Wizard - examples</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12 sf-sea">
+				<div class="sf-nav-wrap clearfix sf-nav-top">
+					<ul class="sf-nav clearfix">
+						<li class="sf-nav-step sf-nav-step-0 sf-li-number sf-active sf-nav-link">
+							<span class="sf-nav-subtext">Basic information</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">1</span></div>
+							<div></div>
+						</li>
+						<li class="sf-nav-step sf-nav-step-1 sf-li-number sf-nav-link">
+							<span class="sf-nav-subtext">Condition</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">2</span></div>
+							<div></div>
+						</li>
+						<li class="sf-nav-step sf-nav-step-2 sf-li-number sf-nav-link">
+							<span class="sf-nav-subtext">Final step</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">3</span></div>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-12 sf-sky">
+			<div class="sf-wizard" id="wizard_example_1-box">
+				<div class="sf-nav-wrap clearfix sf-nav-top">
+					<ul class="sf-nav clearfix">
+						<li class="sf-nav-step sf-nav-step-0 sf-li-number sf-active sf-nav-link">
+							<span class="sf-nav-subtext">Basic information</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">1</span></div>
+							<div></div>
+						</li>
+						<li class="sf-nav-step sf-nav-step-1 sf-li-number sf-nav-link">
+							<span class="sf-nav-subtext">Condition</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">2</span></div>
+							<div></div>
+						</li>
+						<li class="sf-nav-step sf-nav-step-2 sf-li-number sf-nav-link">
+							<span class="sf-nav-subtext">Final step</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">3</span></div>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col-md-12 sf-simple">
+			<div class="sf-wizard" id="wizard_example_1-box">
+				<div class="sf-nav-wrap clearfix sf-nav-top">
+					<ul class="sf-nav clearfix">
+						<li class="sf-nav-step sf-nav-step-0 sf-li-number sf-active sf-nav-link">
+							<span class="sf-nav-subtext">Basic information</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">1</span></div>
+							<div></div>
+						</li>
+						<li class="sf-nav-step sf-nav-step-1 sf-li-number sf-nav-link">
+							<span class="sf-nav-subtext">Condition</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">2</span></div>
+							<div></div>
+						</li>
+						<li class="sf-nav-step sf-nav-step-2 sf-li-number sf-nav-link">
+							<span class="sf-nav-subtext">Final step</span>
+							<div class="sf-nav-number"><span class="sf-nav-number-inner">3</span></div>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 sf-circle">
+				<div class="sf-wizard" id="wizard_example_1-box">
+					<div class="sf-nav-wrap clearfix sf-nav-top">
+						<ul class="sf-nav clearfix">
+							<li class="sf-nav-step sf-nav-step-0 sf-li-number sf-active sf-nav-link">
+								<span class="sf-nav-subtext">Basic information</span>
+								<div class="sf-nav-number"><span class="sf-nav-number-inner">1</span></div>
+								<div></div>
+							</li>
+							<li class="sf-nav-step sf-nav-step-1 sf-li-number sf-nav-link">
+								<span class="sf-nav-subtext">Condition</span>
+								<div class="sf-nav-number"><span class="sf-nav-number-inner">2</span></div>
+								<div></div>
+							</li>
+							<li class="sf-nav-step sf-nav-step-2 sf-li-number sf-nav-link">
+								<span class="sf-nav-subtext">Final step</span>
+								<div class="sf-nav-number"><span class="sf-nav-number-inner">3</span></div>
+								<div></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript">
+			//<![CDATA
+				(function() {
+
+					$(function() {
+						$('.sf-nav-link').on('click', function(ev) {
+							$(this).siblings().each(function() {
+								$(this).removeClass('sf-active');
+							})
+							$(this).addClass('sf-active');
+						})
+					});
+
+				})();
+
+			//]]>
+		</script>
+
+	</body>
+</html>
